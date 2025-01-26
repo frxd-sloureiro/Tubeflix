@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(58, 58, 58, 0.7);
+    background-color: rgb(25, 25, 25);
 }
 
 h1 {
@@ -16,7 +16,7 @@ footer {
     left: 0;
     width: 100%;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    background-color: rgb(155, 155, 155);
+    background-color: #0f0f0f;
     z-index: 3;
 }
 
@@ -25,6 +25,19 @@ footer > p{
     margin-left: 21%;
     position: relative;
     left: 6%;
+    color: rgb(255, 255, 255);
+}
+
+a:link {
+    color: rgb(255, 100, 100);
+}
+
+a:visited {
+    color: rgb(150, 100, 100);
+}
+
+a:hover {
+    color: rgb(150, 150, 150);;
 }
 
 header{
@@ -34,9 +47,9 @@ header{
     width: 100%;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    background-color: rgb(155, 155, 155);
+    background-color: #0f0f0f;
     z-index: 3;
-    height: 100px;
+    height: 80px;
 }
 
 header > a{
@@ -54,7 +67,7 @@ header > a{
     left: 0;
     width: 100%;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    background-color: rgb(155, 155, 155);
+    background-color: #0f0f0f;
     z-index: 3;
 }
 
@@ -63,6 +76,7 @@ header > a{
     margin-left: 17%;
     position: relative;
     left: 6%;
+    color: rgb(255, 255, 255);
 }
 
 img {
@@ -106,4 +120,9 @@ img {
     text-shadow: rgb(0, 0, 0) 0.7mm 0.4mm 0.9mm;
 }
 
-   
+#logo-header > img{
+    position: relative;
+    width: 220px;
+    right: 10px;
+    top: -15px
+}

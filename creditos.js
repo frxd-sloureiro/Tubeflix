@@ -1,4 +1,3 @@
-
 const imagens = {
     fred: { img: document.getElementById("Fred"), text: document.getElementById("fred"), url: 'https://www.instagram.com/frxd_sl?igsh=MXVjaWtjN2JwcHR6YQ==' },
     bia: { img: document.getElementById("Bia"), text: document.getElementById("bia"), url: 'https://www.instagram.com/biiaszp_?igsh=MXI2N3FqNXdiOHZtMQ==' },
