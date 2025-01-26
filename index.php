@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="imagex/png" href="imgs/6dae8b80-7298-47f6-9f24-59318c16424a-removebg-preview.png">
+    <link rel="shortcut icon" type="imagex/png" href="WhatsApp Image 2025-01-25 at 23.07.29.png">
 </head>
 <body>
     <header>
