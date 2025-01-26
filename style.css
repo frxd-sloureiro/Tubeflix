@@ -36,6 +36,7 @@ header{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     background-color: rgb(155, 155, 155);
     z-index: 3;
+    height: 100px;
 }
 
 header > a{
@@ -67,3 +68,42 @@ header > a{
 img {
     width: 70px;
 }
+
+.credit{
+    margin-top: 170px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    text-align: center; 
+}
+  
+  .credit img {
+    width: 200px;
+    height: auto;
+    border-radius: 90%; 
+    cursor: pointer;
+}
+
+.credit p {
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.texto {
+    opacity: 0;            
+    visibility: hidden;  
+    transition: none;       
+}
+
+#credito{
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 0.7mm 0.4mm 0.9mm;
+}
+
+   
