@@ -187,3 +187,23 @@ nav > ul > li > a{
 .nav-option{
     padding-left: 3%;
 }
+
+#konami-message {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+    color: #3f3f3f;
+    text-align: center;
+    margin-top: 10px;
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
