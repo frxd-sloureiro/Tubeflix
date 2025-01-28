@@ -1,1 +1,1 @@
-
+let logo = document.querySelector("img-logo")
