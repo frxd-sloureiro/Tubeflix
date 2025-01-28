@@ -45,10 +45,11 @@
         <?php
         $sql = "SELECT * FROM videos";
         $resultado = $db->query($sql);
-        foreach ($resultado as $video) {?>
+        foreach ($resultado as $video) {
+            if ($video["classe"] === 'culinaria'){?>
         <iframe width="300" height="200" src="<?php echo $video["url"];?>" class ="<?php echo $video["classe"];?>"></iframe>"
         
-        <?php }?>
+        <?php }}?>
     </section>
     </main>
     <footer>
