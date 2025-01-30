@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TubeFlix - Login</title>
-    <script src="script.js"></script>
     <link rel="shortcut icon" href="imgs/icon.png" alt="icone">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="imagex/png" href="imgs/6dae8b80-7298-47f6-9f24-59318c16424a-removebg-preview.png">
@@ -16,31 +15,50 @@
 </head>
 <body>
     <header>
-        <a href="index.php" id="logo-header"><img id="img-logo" src="imgs/logo.png" alt="logo"></a>
+        <a href="index.html" id="logo-header-login"><img id="img-logo" src="imgs/logo.png" alt="logo"></a>
     </header>
     <div class="page">
-            <h1>Login</h1>
-            <p>Digite seus dados para criar uma conta ou para logar.</p>
+            <p>Singup</p>
             <label for="email">E-mail</label>
-            <input id="email-l" type="email" placeholder="Digite seu e-mail" autofocus="true" /><br>
+            <input id="email-su" name="email" type="email" placeholder="Digite seu e-mail" autofocus="true" /><br>
             <label for="password">Senha</label>
-            <input id="senha-l" type="password" placeholder="Digite seu e-mail" /><br>
-            <input id="button-l" type="submit" value="Acessar" class="btn" />
+            <input id="senha-su" type="password" name="password" placeholder="Digite sua senha" /><br>
+            <a href="index.html"><input id="button-su" type="submit" value="Acessar" class="btn" /></a><br>
+            <p>Login</p>
+            <label for="email">E-mail</label>
+            <input id="email-li" type="email" placeholder="Digite seu e-mail" autofocus="true" /><br>
+            <label for="password">Senha</label>
+            <input id="senha-li" name="password" type="password" placeholder="Digite sua senha" /><br>
+            <input id="button-li" name="email" type="submit" value="Acessar" class="btn" />
     </div>
     <footer>
-        <p>Feito por Frederico Loureiro, Beatriz Rodrigues, Francisco Eduardo e Bernardo Quelotti <a href="creditos.html">Veja Mais</a>            <a href="login.html" class="login-button"><img class="login-button" src="imgs\login-button.png"></a></p>
+        <p>Feito por Frederico Loureiro, Beatriz Rodrigues, Francisco Eduardo e Bernardo Quelotti <a href="creditos.html">Veja Mais</a></p>
     </footer>
     <script>
-        let login = document.querySelector("#button-l")
-    let email = document.querySelector("#email-l")
-    let senha = document.querySelector("#senha-l")
+        let singup = document.querySelector("#button-su")
+        let email = document.querySelector("#email-su")
+        let senha = document.querySelector("#senha-su")
 
-    login.addEventListener("click", function (){
-        localStorage.setItem('email', email.value)
-        localStorage.setItem('senha', senha.value)
-        email.value = ''
-        senha.value = ''
-    })
+        singup.addEventListener("click", function (){
+            localStorage.setItem('email', email.value)
+            localStorage.setItem('senha', senha.value)
+            email.value = ''
+            senha.value = ''
+        })
+        let login = document.querySelector("#button-li")
+        let email_l = document.querySelector("#email-li")
+        let senha_l = document.querySelector("#senha-li")
+
+        login.addEventListener("click", function (){
+            if (localStorage.getItem('email', email.value) == email_l.value && localStorage.getItem('senha', senha.value) == senha_l.value) {
+                console.log('sexo')
+                location.href = 'http://localhost/Tubeflix/index.html';
+            }
+            else {
+                email.value = ''
+                senha.value = ''
+            }
+        })
     </script>
     <script>
         let logo = document.querySelector("#img-logo")
